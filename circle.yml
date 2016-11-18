@@ -1,0 +1,11 @@
+services:
+  - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build --rm=false -t circleci/devatus .
+
+test:
+  override:
+    - docker run -i -t circleci/devatus jubastat -v
