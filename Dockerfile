@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Yuji Yamamoto <y.yammt+github -a-t- gmail.com>
 
 ENV JUBATUS_CORE_URL=https://github.com/jubatus/jubatus_core.git \
